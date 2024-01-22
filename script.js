@@ -1,11 +1,15 @@
+const defaultSize =14;
 
 const grid =document.querySelector('.grid')
 
-grid.addEventListener('mouseover',function(){
-    grid.style.backgroundColor ="pink"
-})
+var size= defaultSize
 
-for(let i=0; i<16*16; i++){
+  grid.style.gridTemplateColumns= `repeat(${size},1fr)`;
+  grid.style.gridTemplateRows=`repeat(${size},1fr)`;  
+
+
+
+for(let i=0; i<size*size; i++){
     const gridItems = document.createElement('div')
     gridItems.classList.add('grid-items')
 
