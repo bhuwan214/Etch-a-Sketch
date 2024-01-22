@@ -1,0 +1,37 @@
+* {
+  height: 100%;
+  width: 100%;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main{
+    background-color: #4F6F52;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.canvas{
+background-color: #D2E3C8;
+border: 2px solid white;
+height: 658px;
+width: 658px;
+display: grid;
+grid-template-columns: repeat(8,1fr);
+gap: 0px;
+
+}
+
+.box{
+
+width: 80px;
+height: 80px;
+background-color: azure;
+border: 1px solid black;
+}
