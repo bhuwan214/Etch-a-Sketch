@@ -1,3 +1,11 @@
-let canvas= document.querySelector(".canvas")
+var grid= document.querySelector(".grid")
 
-canvas.appendChild
+for ( let i=0; i<16 * 16; i++){
+    var gridItem =document.createElement('div')
+
+    gridItem.className ='grid-item'
+
+    grid.appendChild(gridItem)
+}
+
+grid.style.backgroundColor =''
