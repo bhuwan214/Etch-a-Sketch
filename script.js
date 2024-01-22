@@ -1,11 +1,18 @@
-var grid= document.querySelector(".grid")
 
-for ( let i=0; i<16 * 16; i++){
-    var gridItem =document.createElement('div')
+const grid =document.querySelector('.grid')
 
-    gridItem.className ='grid-item'
+grid.addEventListener('mouseover',function(){
+    grid.style.backgroundColor ="pink"
+})
 
-    grid.appendChild(gridItem)
+for(let i=0; i<16*16; i++){
+    const gridItems = document.createElement('div')
+    gridItems.classList.add('grid-items')
+
+    gridItems.addEventListener('mouseover',function(){
+        gridItems.style.backgroundColor='pink'
+    })
+
+    grid.appendChild(gridItems)
+
 }
-
-grid.style.backgroundColor =''
