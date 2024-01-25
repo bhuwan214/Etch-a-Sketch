@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 * {
   height: 100%;
   width: 100%;
@@ -10,26 +14,28 @@ html,body{
 
 }
 
-.main{
-    background-color: #4F6F52;
+.main-game{
+    background-color: #EA0B1B;
     display: flex;
-    justify-content: center; 
+    flex-direction: column-reverse;
     align-items: center;
-    gap: 70px;
+    justify-content: center; 
+    gap: 120px;
 }
 .setting{
-    background-color:#324634;
-    height: 400px;
-    width: 200px;
+    background-color:#ede2e2;
+    border-radius: 10px;
+    height: 80px;
+    width: fit-content;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     align-items: center;
     padding: 20px;
 }
 
 .grid{
-background-color: #D2E3C8;
+background-color: #ffffff;
 border: 2px solid #ffffff;
 height: 660px;
 width: 660px;
@@ -41,7 +47,7 @@ gap: 0px;
 
 .grid-items{
 border: solid 2px black;
-background-color: rgb(233, 237, 237);
+background-color: rgb(172, 176, 176);
 
 }
 h3{
@@ -61,11 +67,12 @@ button{
     width: 120px;
     height: 40px;
     border-radius: 2.5px;
-    font: 600;
-    font-family: sans-serif;
-    font-size: 17px;
-    border: none;
-    background-color: none;
+    font: 800;
+    font: bold;
+    font-family: 'Josefin Sans', sans-serif;    font-size: 17px;
+    border: solid 2px white;
+    padding: 2px;
+    background-color:white;
 }
 
 button:hover{
@@ -79,3 +86,20 @@ input[type="range"]{
     width: 150px;
     
 }
+
+.colorBtn{
+    left: -18vw;
+    position:relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.clearBtn{
+    right: -50vw;
+    position:relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
