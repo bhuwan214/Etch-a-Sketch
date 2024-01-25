@@ -1,26 +1,30 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 * {
   height: 100%;
   width: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
 html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+overflow: hidden;
 }
 .main-container{
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .main-game{
     background-color: #EA0B1B;
+    border-radius: 20px;
+    padding-top: 20px;
     width: 974px;
     height: 1040px;
     display: flex;
@@ -42,6 +46,7 @@ html,body{
 }
 
 .grid{
+    
 background-color: #ffffff;
 border: 2px solid #ffffff;
 height: 660px;
@@ -73,7 +78,8 @@ button{
 }
 
 button:hover{
-    transform: scale(1.15);
+    transform: scale(1.15) ;
+    
 }
 
 .colorBtn{
@@ -89,5 +95,16 @@ button:hover{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+}
+
+p{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    top:-27px;
+    
 }
 
