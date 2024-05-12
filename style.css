@@ -11,10 +11,10 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-overflow: hidden;
+
 }
 .main-container{
-    padding-top: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,14 +24,14 @@ overflow: hidden;
 .main-game{
     background-color: #EA0B1B;
     border-radius: 20px;
-    padding-top: 20px;
-    width: 974px;
-    height: 1040px;
+    
+    width: 700px;
+    height: 900px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center; 
-    gap: 50px;
+   
 }
 .setting{
     /* background-color:#ede2e2; */
@@ -49,15 +49,16 @@ overflow: hidden;
     
 background-color: #ffffff;
 border: 2px solid #ffffff;
-height: 660px;
-width: 660px;
+height: 500px;
+width: 500px;
 display: grid;
-
 gap: 0px;
+border: none;
 
 }
 
 .grid-items{
+   
 border: solid 2px black;
 background-color: rgb(205, 213, 213);
 
@@ -65,8 +66,12 @@ background-color: rgb(205, 213, 213);
 
 .menu{
     background-color: rgb(227, 225, 230);
-    width: 500px;
-    height: 80px;
+    width: 300px;
+    height: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
 }
 
 button{
@@ -78,7 +83,7 @@ button{
 }
 
 button:hover{
-    transform: scale(1.15) ;
+    transform: scale(1.05) ;
     
 }
 
@@ -87,6 +92,9 @@ button:hover{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    position: relative;
+    color: rgb(41, 39, 39);
+    left:35px;
 }
 
 .clearBtn{
@@ -95,16 +103,16 @@ button:hover{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    right:35px;
+    color: rgb(41, 39, 39);
+
 }
 
 p{
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
+    color: rgb(204, 196, 196);
     text-align: center;
-    top:-27px;
-    
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
 }
 

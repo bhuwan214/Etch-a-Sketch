@@ -1,4 +1,4 @@
-const defaultSize =14;
+const defaultSize =10;
 
 const grid =document.querySelector('.grid')
 
