@@ -10,13 +10,23 @@
     <div class="main-container">
       <div class="main-game">
         <div class="setting">
-          <button id="colorBtn" class="colorBtn">Color Button</button>
+          <button id="colorBtn" class="colorBtn">Random Color</button>
 
-          <div class="menu"></div>
+          <div class="menu">
+            <input type="color" id="color" />
+          </div>
 
           <button id="clearBtn" class="clearBtn">Clear Button</button>
         </div>
-        <div class="grid"></div>
+        <div class="grid-contianer">
+          <div class="grid"></div>
+          <div class="panel">
+            <p>Value:<output id="value"></output></p>
+            <input type="range" min="2" max="50" step="2" >
+            <img src="eraser-icon-512x512-6m95qgcg.png" alt="eraser" class="eraser" >
+          </div>
+        </div>
+
         <p>Etch-A-Sketch</p>
       </div>
     </div>

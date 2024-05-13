@@ -26,7 +26,7 @@ html,body{
     border-radius: 20px;
     
     width: 700px;
-    height: 900px;
+    height: 800px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -54,6 +54,7 @@ width: 450px;
 display: grid;
 gap: 0px;
 border: none;
+margin-left: 40px;
 
 }
 
@@ -62,6 +63,48 @@ border: none;
 border: solid 2px hwb(0 0% 100%);
 background-color: #ffffff;
 
+}
+
+.panel{
+    width: 50px;
+    height: 50px;
+  
+}
+
+.panel p{
+    position: relative;
+    top: 80px;
+    left: 20px;
+    font-size: 25px;
+}
+input[type="range"]{
+    width: 100px;
+    position: relative;
+    top: 40px;
+    left: 20px;
+
+}
+
+.eraser{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.eraser:hover{
+    transform: scale(1.1);
+
+}
+
+
+.grid-contianer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .menu{
