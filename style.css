@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); */
 
 * {
   height: 100%;
@@ -88,16 +88,28 @@ background-color: #ffffff;
 
 .panel p{
     position: relative;
-    top: 40px;
+    top: 20px;
     left: 20px;
     font-size: 25px;
 }
 input[type="range"]{
     width: 100px;
     position: relative;
+    top: -28px;
     left: 10px;
 
 }
+#valueBtn{
+    width: 40px;
+    height: 30px;
+    font-size: 15px;
+    position: relative;
+    top: -40px;
+    left: 40px;
+    border-radius: 5px;
+
+}
+
 
 .eraser{
     position: relative;

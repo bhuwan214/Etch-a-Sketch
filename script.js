@@ -4,30 +4,33 @@ const clrBtn = document.getElementById("clearBtn");
 const colorBtn = document.getElementById("colorBtn");
 const color = document.querySelector('input[type="color"]');
 const rangeInput = document.querySelector('input[type="range"]');
-const rangeValue = document.querySelector("#value");
+const rangeValue = document.querySelector("#value")
 const Eraser = document.querySelector("img");
+const okBtn =document.getElementById("valueBtn")
+
 
 rangeValue.textContent = rangeInput.value;
-
 rangeInput.addEventListener("input", (event) => {
   rangeValue.textContent = event.target.value;
+  
+})
 
-  refreshPage();
-});
-
-var size = rangeValue.textContent;
-
+ size = rangeValue.textContent;
 // size=prompt("Enter a number")
 
-const grid = document.querySelector(".grid");
+okBtn.addEventListener('click',()=>{
+  refreshPage()
+})
 
+const grid = document.querySelector(".grid");
 grid.style.gridTemplateColumns = `repeat(${size},1fr)`;
 grid.style.gridTemplateRows = `repeat(${size},1fr)`;
 
 for (let i = 0; i < size * size; i++) {
-  //creating the grid-item and  making them child of grid
+//creating the grid-item and  making them child of grid
   const gridItems = document.createElement("div");
   gridItems.classList.add("grid-items");
+
 
   //coloring the grid items
   gridItems.addEventListener("mouseover", function () {
@@ -38,7 +41,22 @@ for (let i = 0; i < size * size; i++) {
 
   clrBtn.addEventListener("click", () => {
     gridItems.style.backgroundColor = "";
+
+    gridItems.addEventListener("mouseover", () => {
+      gridItems.style.backgroundColor = `${color.value}`
+
+    });
+
   });
+
+  Eraser.addEventListener("click", () => {
+    gridItems.addEventListener("mouseover", () => {
+      gridItems.style.backgroundColor = "white"
+
+    });
+
+  });
+
 
   //Random RBG value for random color creation
   let red = Math.floor(Math.random() * 256);
@@ -54,20 +72,21 @@ for (let i = 0; i < size * size; i++) {
   });
 
   //Coloring the component (fix for random click not working default coloring function )
-  color.addEventListener("click", () => {
-    gridItems.addEventListener("mouseover", () => {
-      gridItems.style.backgroundColor = `${color.value}`;
+
+    color.addEventListener("click", () => {
+      gridItems.addEventListener("mouseover", () => {
+        gridItems.style.backgroundColor = `${color.value}`
+  
+      });
     });
-  });
 
   //Erasing the colored components
-  Eraser.addEventListener("click", () => {
-    gridItems.addEventListener("mouseover", () => {
-      gridItems.style.backgroundColor = "white";
-    });
-  });
+  
+
+
 }
 
-function refreshPage() {
-  window.location.reload();
+function refreshPage(){
+window.location.reload()
+
 }
