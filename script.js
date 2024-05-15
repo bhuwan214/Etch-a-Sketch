@@ -105,6 +105,3 @@ function settingColor() {
   return `${Color.value}`;
 }
 
-const footer = document.querySelector("footer");
-const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
