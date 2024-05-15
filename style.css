@@ -1,5 +1,5 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 * {
   height: 100%;
@@ -12,6 +12,7 @@ html,body{
     padding: 0;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -99,20 +100,10 @@ input[type="range"]{
     left: 10px;
 
 }
-#valueBtn{
-    width: 40px;
-    height: 30px;
-    font-size: 15px;
-    position: relative;
-    top: -40px;
-    left: 40px;
-    border-radius: 5px;
-
-}
-
 
 .eraser{
     position: relative;
+    top: -25px;
     left: 35px;
     background-color: white;
     border-radius: 10px;
@@ -179,3 +170,22 @@ p{
 
 }
 
+
+footer{
+
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 16px;
+ color:black;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
